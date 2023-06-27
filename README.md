@@ -1,6 +1,4 @@
-# Introducing Codoc
-
-<img src="./public/icon.png" width="100">
+# Introducing Codoc <img src="./public/icon.png" width="100">
 
 Document your code.
 

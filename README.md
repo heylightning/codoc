@@ -1,8 +1,17 @@
 # Introducing Codoc
 
-<img src="../txa/icon.png" width="100">
+<img src="./public/icon.png" width="100">
 
 Document your code.
+
+# Setup the workflow: -
+* Clone the repository with this command:
+```
+git clone git@github.com:heylightning/codoc-ext.git
+```
+* In progress.
+
+*Note: Requirements and setup are staged for VERSION 1.0.0*
 
 ## LICENSE 📄
 MIT License

@@ -2,7 +2,7 @@
 
 <img src="./public/icon.png" width="100">
 
-Document your code.
+Document your python code.
 
 # Setup the workflow: -
 1. Clone the repository with this command:

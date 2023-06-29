@@ -24,7 +24,7 @@ git clone git@github.com:heylightning/codoc-ext.git
 ### Python Code Documentation Extension 🧑‍💻
 This Python code documentation extension is designed to analyze a Python code input and generate a documentation object. 
 
-Here is the ` documentationObject `:
+Here is the ` documentationObject ` : - 
 ```javascript
 
     const documentationObject = {
@@ -41,12 +41,27 @@ Here is the ` documentationObject `:
 
 ```
 
-
-
 The documentation object contains the following attributes and also gives the option to download the output as PDF file too:
 
+1. ` userDefinedFunctions ` : This attribute represents an array of user-defined functions present in the code. It includes the names, parameters and details of all functions defined by the user in the input Python code.
 
+2. ` globalVariables ` : This attribute represents an array of global variables used in the code.
 
+3. ` printStatements ` : This attribute contains an array of print statements found in the code. 
+
+4. ` userDefinedClasses ` : This attribute represents an array of user-defined classes in the code.
+
+5. ` importedLibraries ` : This attribute contains an array of imported libraries/modules in the code.
+
+6. ` numberOfConditionalStatements ` : This attribute represents the count of conditional statements in the code. It indicates the number of if/elif/else statements used.
+
+7. ` numberOfSwitchStatements ` : This attribute represents the count of switch statements in the code.
+
+8. ` numberOfLoops ` : This attribute represents the count of loops in the code. It indicates the number of for loops, while loops, or other loop constructs used.
+
+9. ` numberOfReturnStatements ` : This attribute represents the count of return statements in the code. It indicates the number of return statements used within functions or methods.
+
+The Python code documentation extension utilizes these attributes to provide a comprehensive overview of the input code. It helps developers understand the structure, functions, variables, and control flow within the Python code, making it easier to maintain and collaborate on projects.
 
 ## LICENSE 📄
 MIT License

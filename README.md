@@ -19,6 +19,35 @@ git clone git@github.com:heylightning/codoc-ext.git
 
 *Note: Requirements and setup are staged for VERSION 1.0.0*
 
+## Description
+
+### Python Code Documentation Extension 🧑‍💻
+This Python code documentation extension is designed to analyze a Python code input and generate a documentation object. 
+
+Here is the ` documentationObject `:
+```javascript
+
+    const documentationObject = {
+        userDefinedFunctions: userDefinedFunctions,
+        globalVariables: globalVariables,
+        printStatements: printStatements,
+        userDefinedClasses: userDefinedClasses,
+        importedLibraries: importedLibraries,
+        numberOfConditionalStatements: numberOfConditionalStatements,
+        numberOfSwitchStatements: numberOfSwitchStatements,
+        numberOfLoops: numberOfLoops,
+        numberOfReturnStatements: numberOfReturnStatements
+    };
+
+```
+
+
+
+The documentation object contains the following attributes and also gives the option to download the output as PDF file too:
+
+
+
+
 ## LICENSE 📄
 MIT License
 

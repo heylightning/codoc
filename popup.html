@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codoc | Document your python code.</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="code-section">
+        <div class="header">
+            <img class="icon-head" src="./public/icon.svg" alt="icon">
+            <p>
+                Get documentation for your code instantly. <span class="promo">A .pmWEB creation.</span>
+            </p>
+            <button id="run" class="runBTN"><img src="./public/play.png" width="10px" alt="run"></button>
+        </div>
+        <textarea id="code" spellcheck="false" placeholder="Example:
+
+import math
+def calculate_area(radius):
+    area = math.pi * radius ** 2
+    return area
+def print_greeting(name):
+    print(f'Hello, {name}!')
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def calculate_area(self):
+        area = self.length * self.width
+        return area
+x = 5
+y = 10
+if x > y:
+    print('x is greater than y')
+elif x = y:
+    print('x is equal than y')
+else:
+    print('x is less to y')
+for i in range(3):
+    print(i)
+" id="code"></textarea>
+
+        <button class="downpdf" id="download-pdf">Download Documentation PDF</button>
+    </div>
+    <div class="document-section">
+        <textarea spellcheck="false" id="document" placeholder='
+Example:
+
+{
+    "userDefinedFunctions": [
+        {
+            "name": "calculate_area",
+            "parameters": null
+        },
+        {
+            "name": "print_greeting",
+            "parameters": null
+        },
+        {
+            "name": "__init__",
+            "parameters": [
+                "self",
+                " length",
+                " width"
+            ]
+        },
+        {
+            "name": "calculate_area",
+            "parameters": null
+        }
+    ],
+    "globalVariables": [],
+    "printStatements": [
+        {
+            "line": "print(f"Hello, {name}!")"
+        },
+        {
+            "line": "print("x is greater than y")"
+        },
+        {
+            "line": "print("x is equal than y")"
+        },
+        {
+            "line": "print("x is less to y")"
+        },
+        {
+            "line": "print(i)"
+        }
+    ],
+    "userDefinedClasses": [
+        {
+            "className": "Rectangle"
+        }
+    ],
+    "importedLibraries": [
+        {
+            "imported": "import math"
+        }
+    ],
+    "numberOfConditionalStatements": 3,
+    "numberOfSwitchStatements": 0,
+    "numberOfLoops": 1,
+    "numberOfReturnStatements": 2
+}
+' readonly></textarea>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Codoc",
+    "version": "1.0.0",
+    "description": "Document you python code.",
+    "icons": {
+        "48": "./public/icon.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./public/icon.png",
+            "48": "./public/icon.png"
+        }
+    },
+    "content_security_policy": "script-src 'self' blob: filesystem: https://cdnjs.cloudflare.com",
+    "permissions": ["activeTab"]
+}

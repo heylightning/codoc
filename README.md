@@ -15,7 +15,7 @@ git clone git@github.com:heylightning/codoc-ext.git
     * Enable the "Developer mode" or a similar option in your browser.
     * Look for an option to "Load unpacked" or "Load extension" and choose that option.
     * Select the folder where you have your extension project (the one containing ` manifest.json `).
-3. Your extension should now be loaded and visible in your browser's toolbar. Click on the extension icon to open the to-do list.
+3. Your extension should now be loaded and visible in your browser's toolbar. Click on the extension icon to open the extension.
 
 *Note: Requirements and setup are staged for VERSION 1.0.0*
 
